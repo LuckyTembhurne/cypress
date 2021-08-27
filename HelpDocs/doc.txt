@@ -1,0 +1,81 @@
+Go to url: cy.visit('locator')
+
+get element: cy.get('locator')
+
+assertion: cy.get('locator').should('assertion','value')
+Attribute assertion: cy.get('locator').should('have.attr','attribture_name','attribute_value')
+
+click: cy.get('locator').click()
+
+Type: cy.get('locator').type('value')
+
+Static dropdown: cy.get('locator').select('value')
+Verify selection: cy.get().select('option1').should('have.value', 'option1')
+Dynamic dropdown: typekeyword > grab all options > iterate > compare text and click
+
+Get only visible elements: cy.get('locator:visible')
+Get elements inside parent locator: cy.get('locator').find('child locator')
+Element with many results: cy.get('locator').eq(1)
+Iterate through array list: cy.get('').find('').each($el, index, $list)=>{
+	const textvalue = $el.find('').text()
+	if(textvalue.inculdes('Text')){
+		$l.find('button').click()
+		}
+	} 
+
+Get text: cy.get('locator').invoke('text')
+.should('match', /^Hello/)		//should match starting with Hello
+
+Aliasing: cy.get('locator').as('alias')	
+Use as cy.get('@alias')
+
+Click checkbox: cy.get('locator').check()
+
+Cypress auto confirms the alert, we cannot change this.		//window:alert is JQuery
+Alert text verify(auto-confirm): cy.on('window:alert', (str)=>{
+	expect(str).to.equal('actual string')
+})
+
+Cypress cannot handle switch to tabs. A link is opened in separate tab if that element has "target" attribute.
+In cypress, we can modify element to remove this attribute and we can open tab in same current window and continue testing
+cy.get('locator').invoke('removeAttr','target').click()			//removeAttr is JQuery
+
+cy.go('back')
+cy.go('forward')
+cy.url().should('include', 'expected substring in url')
+
+Read WebTable Data: 
+tr:nth-child(2) = 2nd row
+td:nth-child(3) = 3rd column
+
+Find next sibling of element: cy.get().next()
+Find third column from second column: cy.get('entire column locator').each(($el, index, $list)=>{
+	if($el.text() === 'second column expected text'){
+		cy.get('entire column locator').eq(index).next().then((next_column)=>{
+			cy.log(next_column.text())
+		})
+	}
+}) 
+
+Mouse Hover:
+Mouse hover is not supported by Cypress as it leads to flaky results. we can use JQuery show() to show hidden elements.
+cy.get('locator').invoke('show')
+cy.contains('option from hidden list').click()		//jQuery is always applied to immediate child elements only
+we can also click directly hidden element: cy.contains('').click({force:true})
+
+Get Attribute value using JQuery: 
+cy.get('locator').then((element)=>{
+	const href_url = cy.get(element).prop('href')
+})
+
+Frames:
+install npm -D cypress-iframe
+cy.frameLoaded('#frameid')
+cy.iframe().find('locator').click() 
+
+Debugging:
+cy.pause(): will pause the execution when at this command and then we can resume
+
+Run particular spec: node_modules\.bin\cypress run --reporter mochawesome --spec cypress\integration\Sanity\IBM.js --headed
+
+Cucumber Report: node cucmber-html-reports.js  

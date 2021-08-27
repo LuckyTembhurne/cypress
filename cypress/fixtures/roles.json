@@ -1,0 +1,12 @@
+{
+    "DEV": {
+        "IBM": {
+            "EMEA": {
+                "ROLE01": "GITC TRN EMEA [View New Delegations]"
+            },
+            "NA": {
+                "ROLE01": "GITC TRN NA [View New Delegation Levels]"
+            }
+        }   
+    }
+}

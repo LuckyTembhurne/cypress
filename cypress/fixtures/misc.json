@@ -1,0 +1,117 @@
+{
+	"OFFERS": {
+		"OFFER01": "CR UAT 3 - May 22nd release UAT for offer CR -2",
+		"OFFER02": "TESTAUTO - Offer to be used for automation",
+		"OFFER03": "TSTOFF1 - Test Offer 1",
+		"OFFER04": "OFFER_DR - Test automation offer with DR",
+		"OFFER05": "OFFER - Test automation offer with no DR",
+		"OFFER06": "000 - ok"
+	},
+	"MYSARELATION": {
+		"DIS": "DIS",
+		"SP1": "SP1",
+		"SP2": "SP2"
+	},
+	"BIDTYPE": {
+		"BIDTYPE01": "Managed Services Offering",
+		"BIDTYPE02": "Standard",
+		"BIDTYPE03": "Embedded Solution Agreement",
+		"BIDTYPE04": "Special Condition",
+		"BIDTYPE05": "CISCO",
+		"BIDTYPE06": "z Systems",
+		"BIDTYPE07": "ESA",
+		"BIDTYPE08": "Three-tier Transaction",
+		"BIDTYPE09": "Non standard - Transaction Agreement",
+		"BIDTYPE10": "Managed Services"
+
+	},
+	"IBMSEARCHCRITERIA": {
+		"QUOTEID": "quoteid",
+		"QUOTESTATUS": "quotestatus",
+		"ENDUSERCUSTOMERNAME": "eucustomername"
+	},
+	"BPSEARCHCRITERIA": {
+		"QUOTEID": "Quote id(s)",
+		"STATUS": "Quote status",
+		"TIER2CEID": "Tier 2 CEID",
+		"COUNTRY": "Country",
+		"REGISTRANUMBER" : "Registration number"
+	},
+	"QUOTEACTIONS": {
+		"OPEN": "Open",
+		"DUPLICATE": "Duplicate",
+		"DELETE": "Delete",
+		"PLACEONHOLD": "Place On Hold",
+		"WITHDRAW": "Withdraw"
+	},
+	"BPQUOTESTATUS": {
+		"BPWITHDRAWN": "BP Withdrawn",
+		"IBMAPPROVED": "IBM Approved",
+		"INPROCESS": "In Process",
+		"PREPAREFORDIST": "Prepare for distributor",
+		"INCOMPLETE": "Incomplete",
+		"ONHOLD": "On Hold",
+		"SUBMITTEDTODIST": "Submitted to distributor",
+		"RETURNEDFROMDIST": "Returned from distributor",
+		"VSAPPROVED": "Value Seller Approved",
+		"REQUESTPRICING": "Request Pricing",
+		"IBMWITHDRAWN": "IBM Withdrawn"
+	},
+	"IBMQUOTESTATUS": {
+		"CONTRACTPREPARATION": "Contract preparation",
+		"IBMAPPROVED": "IBM approved",
+		"IBMWITHDRAWN": "IBM withdrawn",
+		"INCOMPLETE": "Incomplete",
+		"ONHOLD": "On hold",
+		"PROPOSALSIGNEDBYCUSTOMER": "Quote proposal signed by customer",
+		"QUOTEREJECTEDBYCUSTOMER": "Quote rejected by customer",
+		"ONGOINGCOPRAPRICED": "Ongoing quote - Copra priced",
+		"ONGOINGNEEDAPPROVAL": "Ongoing quote - Need approval",
+		"ONGOINGAPPROVED": "Ongoing quote - Approved",
+		"ONGOINGREJECTED": "Ongoing quote - Rejected",
+		"WAITINGFORAPPROVAL": "Waiting for approval",
+		"DOESNOTNEEDAPPROVAL": "Ongoing quote - Does not need approval"
+	},
+	"BPATIBMSTATUS": {
+		"IBMWITHDRAWN": "28",
+		"INCOMPLETE": "25",
+		"REQUESTPRICING": "24",
+		"ONHOLD": "26"
+	},
+	"REASONCODE": {
+		"CHANNEL": "240",
+		"PRICER": "241",
+		"DUPLICATE": "265",
+		"OTHER": "283"
+	},
+	"SDECODE":{
+		"SDE1":"SDE1",
+		"SDE2":"SDE2"
+	},
+	"IBMSOLUTIONTYPE":{
+		"BU": "BU",
+		"AN": "An-DMgmt",
+		"CISCO":"006"
+	},
+	"IBMPRICESTABLEVIEW":{
+		"COMPONENT":"Component",
+		"DIVISION": "Division code",
+		"TOTAL": "Total"
+	},
+	"ADDEDNDUMLIST":{
+		"FIRST":"Approved addendum 1",
+		"SECOND": "Approved addendum 2",
+		"THIRD": "Approved addendum 3"
+	},
+	"REJECTREASON":{
+		"BRET":" 288",
+		"BRAND": "282",
+		"OTHER": "283"
+	},
+	"QUESTSERVICEDURATION":{
+		"THIRTYSIX":" 36",
+		"FORTYEIGHT": "48",
+		"SIXTY": "60"
+	}
+
+}

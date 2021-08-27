@@ -1,0 +1,192 @@
+[
+  {
+    "description": "    Sanity on application",
+    "keyword": "Feature",
+    "name": "IBM Sanity",
+    "line": 1,
+    "id": "ibm-sanity",
+    "tags": [],
+    "uri": "IBMsanity.feature",
+    "elements": [
+      {
+        "id": "ibm-sanity;emea-sanity",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "EMEA sanity",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Login to \"DEV_IBM\" with user \"ePricerIBMauto\"",
+            "result": {
+              "status": "passed",
+              "duration": 30426000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Select role \"EMEA\"-\"ROLE01\"",
+            "result": {
+              "status": "passed",
+              "duration": 7268000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Create a new quote",
+            "result": {
+              "status": "passed",
+              "duration": 7485000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Verify quote status as \"Ongoing\"",
+            "result": {
+              "status": "passed",
+              "duration": 997000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Fill overview data with country \"FR\", title \"IBM EMEA Sanity\", channel \"A\", solution \"BU\" and crad \"30 Dec 2021\"",
+            "result": {
+              "status": "passed",
+              "duration": 14240000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Search and retreive IBM customer with name \"AIGLE*\"",
+            "result": {
+              "status": "passed",
+              "duration": 8175000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Add \"HP\" \"7014\"-\"T42\" manual component with quantity \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 4121000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Perform collect pricing",
+            "result": {
+              "status": "passed",
+              "duration": 8027000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "ibm-sanity;na-sanity",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "NA sanity",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "Login to \"DEV_IBM\" with user \"ePricerIBMauto\"",
+            "result": {
+              "status": "passed",
+              "duration": 24081000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "Select role \"NA\"-\"ROLE01\"",
+            "result": {
+              "status": "passed",
+              "duration": 7900000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "Create a new quote",
+            "result": {
+              "status": "passed",
+              "duration": 2335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Verify quote status as \"Ongoing\"",
+            "result": {
+              "status": "passed",
+              "duration": 1106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "Fill overview data with country \"CA\", title \"IBM NA Sanity\", channel \"A\", solution \"BU\" and crad \"30 Dec 2021\"",
+            "result": {
+              "status": "passed",
+              "duration": 9147000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Search and retreive IBM customer with name \"BA*\"",
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[data-ng-model=\"ccmsnb\"]`, but never found it.\n    at CustomerTab.searchResultRadio (https://epricercdtdev.w3-969.ibm.com/__cypress/tests?p=cypress\\integration\\Tests\\IBM\\IBMsanity.feature:264:17)\n    at Context.eval (https://epricercdtdev.w3-969.ibm.com/__cypress/tests?p=cypress\\integration\\Tests\\IBM\\IBMsanity.feature:102:15)\n    at Context.resolveAndRunStepDefinition (https://epricercdtdev.w3-969.ibm.com/__cypress/tests?p=cypress\\integration\\Tests\\IBM\\IBMsanity.feature:12799:9)\n    at Context.eval (https://epricercdtdev.w3-969.ibm.com/__cypress/tests?p=cypress\\integration\\Tests\\IBM\\IBMsanity.feature:12117:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "Add \"HP\" \"7014\"-\"T42\" manual component with quantity \"4\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Perform collect pricing",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
